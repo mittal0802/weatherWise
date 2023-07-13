@@ -80,7 +80,7 @@ const WeatherData = (props) => {
           <p>{props.windData.speed}&nbsp;mph</p>
         </div>
         <div>
-          <p>{props.lang ? "PRESURE" : "दबाव"}</p>
+          <p>{props.lang ? "PRESSURE" : "दबाव"}</p>
           <img
             src={
               "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/pressure-low.svg"
