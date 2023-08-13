@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import searchIcon from "../assets/search.svg";
 import WeatherData from "./weatherData.component";
+
 import linkIcon from "../assets/external-link.svg";
 const WeatherBox = () => {
   const inputValue = useRef();
@@ -11,7 +12,7 @@ const WeatherBox = () => {
   const [cityDetails, setCityDetails] = useState([]);
   const [dataWeather, setDataWeather] = useState([]);
   const [windData, setWindData] = useState([]);
-  const APP_KEY = "7913157f80c90409488af2b19152d936";
+  const APP_KEY = process.env.REACT_APP_API_KEY;
   useEffect(() => {
     (async () => {
       const response = await fetch(
